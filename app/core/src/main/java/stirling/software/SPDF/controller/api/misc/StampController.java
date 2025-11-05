@@ -112,7 +112,7 @@ public class StampController {
         float fontSize = request.getFontSize();
         float rotation = request.getRotation();
         float opacity = request.getOpacity();
-        int position = request.getPosition(); // Updated to use 1-9 positioning logic
+        int position = Integer.parseInt(request.getPosition());
         float overrideX = request.getOverrideX(); // New field for X override
         float overrideY = request.getOverrideY(); // New field for Y override
 
